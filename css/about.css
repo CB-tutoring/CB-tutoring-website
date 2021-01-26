@@ -1,0 +1,39 @@
+/*body classes*/
+body { 
+    overflow-y: hidden;
+    margin: 0px;
+}
+.parallax {
+    perspective: 1px;
+    perspective-origin: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-size: 50px;
+  }
+  .parallax__group {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    transform-style: preserve-3d;
+  }
+  .parallax__layer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid black;
+  }
+  .parallax__layer--base {
+    transform: translate3d(0);
+  }
+  .parallax__layer--middle {
+    transform: translate3d(-50%, -50%, -1px) scale(2);
+  }
+  .parallax__layer--back {
+    transform: translate3d(-50%, -50%, -2px) scale(3);
+  }
+  .titleImage {
+    background-color: aqua;
+    height: 50vh;
+    width: 100vw;
+  }
+
