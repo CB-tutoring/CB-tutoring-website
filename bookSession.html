@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/bookSession.css">
+    <link rel="stylesheet" href="css/headerFooter.css">
+  </head>
+  <body>
+    <div class="parallax">
+      <!-- idle header -->
+      <div class="idleHeader">
+        <center>
+        <table class="headerTable" cell>
+          <tr>
+            <td>About</td>
+            <td>How to Book</td>
+            <td>Home</td>
+            <td>Contact</td>
+            <td>FAQ</td>
+          </tr>
+        </table>
+        </center> 
+      </div>
+        
+      <div class="parallax__group">
+        <div class="parallax__layer parallax__layer--back">
+          <p>Background</p>
+        </div>
+          <div class="parallax__layer parallax__layer--middle">
+            <p>Background</p>
+          </div>
+        <div class="parallax__layer--base">
+          <div>Book a session</div>
+          <!--Form containing all of their personal information-->
+          <div class="personalContainer">
+              <form action="" id="personalForm">
+                <label for="fnameS">First name:</label><br>
+                <input type="text" id="fnameS" name="fnameS"><br>
+                <label for="lnameS">Last name:</label><br>
+                <input type="text" id="lnameS" name="lnameS">
+                <label for="grade">Grade:</label><br>
+                <input type="text" id="grade" name="grade">
+                <label for="Email">Email:</label><br>
+                <input type="email" id="email" name="email">
+              </form>
+          </div>
+          <!--Form containing all of their session information-->
+          <div class="sessionContainer">
+              <form action="" id="sessionForm">
+                <label for="nameT">Tutor's Name:</label><br>
+                <input type="text" id="nameT" name="nameT"><br>
+                <label for="subject">Grade:</label><br>
+                <input type="text" id="subject" name="subject">
+                <label for="date">Date:</label><br>
+                <input type="date" id="date" name="date">
+                <label for="time">Timeslot:</label>
+                <select id="time" name="timeList" form="sessionForm">
+                    <option value="24">2pm - 4pm</option>
+                    <option value="46">4pm - 6pm</option>
+                </select> 
+                <input type="submit" name="" id="">
+                <input type="reset" name="" id="">
+            </form>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

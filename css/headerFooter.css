@@ -21,3 +21,31 @@
     padding-right: 3vw;
   }
   
+  .parallax {
+    perspective: 1px;
+    perspective-origin: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-size: 50px;
+  }
+  .parallax__group {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    transform-style: preserve-3d;
+  }
+  .parallax__layer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid black;
+  }
+  .parallax__layer--base {
+    transform: translateZ(0);
+  }
+  .parallax__layer--middle {
+    transform: translateZ(1px) scale(2);
+  }
+  .parallax__layer--back {
+    transform: translateZ(-2px) scale(3);
+  }
