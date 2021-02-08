@@ -26,7 +26,7 @@
     perspective-origin: center;
     overflow-x: hidden;
     overflow-y: auto;
-    font-size: 50px;
+    /**font-size: 50px;**/
   }
   .parallax__group {
     position: relative;

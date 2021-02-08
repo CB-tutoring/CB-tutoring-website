@@ -1,5 +1,11 @@
 body { 
-    overflow-y: hidden;
     margin: 0px;
+}
+.contactForm {
+    border: solid;
+    border-width: 1vh;
+    width: 17.5vw;
+    padding: 2vw;
+    margin-left: 35.5vw;
 }
 
