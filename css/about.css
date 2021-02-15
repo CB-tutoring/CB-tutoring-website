@@ -1,11 +1,105 @@
 /*body classes*/
 body { 
-    overflow-y: hidden;
     margin: 0px;
 }
-  .titleImage {
-    background-color: aqua;
-    height: 50vh;
-    width: 100vw;
-  }
+* {
+  box-sizing: border-box;
+}
 
+/*css for the opening picture*/
+.titleContainer {
+   background-color: black;
+   height: 50vh;
+   width: 100%;
+   overflow: hidden;
+   height: 60vh;
+   position: relative;
+}
+.titleContainer div {
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5vw;
+  text-shadow: 1px 1px white;
+  text-decoration: underline;
+  z-index: 2;
+}
+.titleImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  max-width: 100vw;
+  min-width: 1200px;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+/*css for the text portion*/
+.textSection {
+  padding: 10vh 0 0 0;
+}
+.serviceContainer {
+  width: 25vw;
+  font-size: 1.5vw;
+  margin: 0 0 0 10vw;
+}
+.missionContainer {
+  width: 30vw;
+  font-size: 1.5vw;
+  margin: 0 10vw 10vh 0;
+  text-align: right;
+  float: right;
+}
+
+/*css for the goals section*/
+.goalsSection {
+  background-color: lightgray;
+  width: 100%;
+  padding: 5vh 0 5vh 0;
+  overflow: none;
+  clear: both;
+}
+.goalsSection h1 {
+  text-align: center;
+  font-size: 3vw;
+}
+.goalsContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 60vw;
+  margin: auto;
+}
+.goalsContainer div {
+  width: 15vw; 
+  box-shadow: 0px 0px 10px black;
+  margin: 1.4vw;
+  text-align: center;
+  display: block;
+  padding: 1vw;
+}
+.goalsContainer img {
+  width: 50%;
+  border-radius: 50%;
+  background-color: lightgray;
+  display: block;
+}
+
+/*css for meet the team*/
+.teamContainer h1 {
+  text-align: center;
+  font-size: 3vw;
+}
+.teamRow {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  width: 98vw;
+}
+.teamRow div {
+  width: 12vw;
+  height: 12vh;
+  box-shadow: 0px 0px 10px black;
+}

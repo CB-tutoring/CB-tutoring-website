@@ -1,11 +1,75 @@
 body { 
     margin: 0px;
 }
-.contactForm {
-    border: solid;
-    border-width: 1vh;
-    width: 17.5vw;
-    padding: 2vw;
-    margin-left: 35.5vw;
+.topText {
+    margin: 5vh 0 9vh 0;
 }
+
+/*Webpage contact form*/
+.contactForm {
+    width: 20vw;
+    box-shadow: 0px 0px 25px 0px rgb(0,0,0,0.5);
+    padding: 1vw;
+    font-size: 1vw;
+    margin: 0 0 10vh 0;
+}
+.contactForm td, .contactForm tr {
+    padding: 0.5vw 1.3vw 0.5vw 1vw;
+}
+.contactForm input {
+    width: 100%;
+    height: 5vh;
+    margin: 0.8vh 0 0 0;
+}
+.contactForm textarea {
+    margin: 0.8vh 0 0 0;
+    resize: none;
+}
+
+/*Bottom half of the webpage*/
+.bottomContainer {
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+}
+.holder {
+    margin: 5vw 0 0 0;
+}
+
+/*Contact information segment of the webpage*/
+.information {
+    display: inline-block;
+    vertical-align: top;
+    background-color: white;
+    padding: 2vw;
+    margin: 0 5vw 0 0;
+}
+.information h1 {
+    margin: 0 0 2vh 0;
+}
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 2vw;
+    margin: 1vh 1vw 1vh 0;
+}
+.contactRow{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*The links segment of the webpage*/
+.links {
+    display: inline-block;
+    margin: 0 0 0 0;
+    width: 40%;
+}
+.linkRowTitle, .linkRowTopic {
+    margin: 2vh 0 2vh 0;
+}
+.linkRowTopic h2 {
+    color: blue;
+
+}
+
 

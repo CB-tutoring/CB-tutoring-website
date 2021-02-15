@@ -1,4 +1,35 @@
 body { 
-    overflow-y: hidden;
     margin: 0px;
+}
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 100vw;
+    background-color: bisque;
+}
+
+.personalContainer {
+    width: 25vw;
+    font-size: 1.2vw;
+    background-color: aquamarine;
+}
+.personalContainer input {
+    margin: 0.5vh 0 0.5vh 0;
+}
+
+.submit {
+    width: 100%;
+}
+.reset {
+    background-color: transparent;
+    border: 0px;
+    margin: auto;
+}
+
+.textContainer {
+    width: 50vw;
+    background-color: aqua;
+    height: 50vh;
 }

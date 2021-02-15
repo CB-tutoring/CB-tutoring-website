@@ -1,16 +1,45 @@
 body { 
-    overflow-y: hidden;
     margin: 0px;
+}
+hr {
+  width: 50%;
+  height: 0.5vh;
+  background-color: black;
+  border: none;
 }
 
 .dropdowns{
-    width:70vw;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-    font-size:1.5vw;
-    border-top: solid;
-    border-color: lightgray;
-    text-align: left;
-  }
-/** Simple span to increase section text size**/
-span b { font-size: 150%; font-weight: normal }
+  width: 70vw;
+  font-size: 1.5vw;
+  position: relative;
+  margin: auto;
+  line-height: 10vh;
+}
+.dropdowns button {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(0%, -50%);
+  width: 6vw;
+  font-size: 1vw;
+  background-color: white;
+}
+
+.hidden {
+  font-size: 1.1vw;
+  margin-top: 2vh; 
+  display: none; 
+  overflow: hidden;
+}
+.hidden div {
+  opacity: 0; 
+  margin-top: -10.5vh; 
+  transition: 2s; 
+}
+
+
+/* Simple span to increase section text size*/
+span b { 
+  font-size: 150%; 
+  margin: 0px;
+}
