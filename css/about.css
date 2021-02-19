@@ -1,6 +1,7 @@
 /*body classes*/
 body { 
     margin: 0px;
+    font-family: Helvetica;
 }
 * {
   box-sizing: border-box;
@@ -14,7 +15,8 @@ body {
    overflow: hidden;
    height: 60vh;
    position: relative;
-}
+   box-shadow: 0px 0px 3vw 5px rgb(0, 0, 0, 0.9);
+  }
 .titleContainer div {
   position: absolute;
   top: 50%; 
@@ -38,19 +40,19 @@ body {
 
 /*css for the text portion*/
 .textSection {
-  padding: 10vh 0 0 0;
+  padding: 10vh 0 10vh 0;
+  display: flex;
+  justify-content: center;
 }
-.serviceContainer {
-  width: 25vw;
+.aboutContainer {
+  width: 45vw;
   font-size: 1.5vw;
-  margin: 0 0 0 10vw;
+  padding: 2vw;
+  background-color: rosybrown;
 }
-.missionContainer {
-  width: 30vw;
-  font-size: 1.5vw;
-  margin: 0 10vw 10vh 0;
-  text-align: right;
-  float: right;
+.aboutContainer h2 {
+  margin: 0 0 2vh 0;
+  text-align: center;
 }
 
 /*css for the goals section*/
@@ -74,7 +76,7 @@ body {
 }
 .goalsContainer div {
   width: 15vw; 
-  box-shadow: 0px 0px 10px black;
+  box-shadow: 0px 0px 1vw 5px rgb(0, 0, 0, 0.5);
   margin: 1.4vw;
   text-align: center;
   display: block;
@@ -99,7 +101,10 @@ body {
   width: 98vw;
 }
 .teamRow div {
-  width: 12vw;
-  height: 12vh;
   box-shadow: 0px 0px 10px black;
+  position: relative;
+}
+.teamRow img {
+  width: 12vw;
+  display: block;
 }

@@ -1,35 +1,89 @@
 body { 
     margin: 0px;
 }
+* {
+    box-sizing: border-box;
+  }
 
+/*css for the opening picture*/
+.titleContainer {
+    background-color: black;
+    height: 50vh;
+    width: 100%;
+    overflow: hidden;
+    height: 60vh;
+    position: relative;
+}
+ .titleContainer div {
+   position: absolute;
+   top: 50%; 
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 2vw;
+   text-shadow: 1px 1px white;
+   text-decoration: underline;
+   z-index: 2;
+ }
+ .titleImage {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -45%);
+   max-width: 100vw;
+   min-width: 1200px;
+   opacity: 0.7;
+   z-index: 1;
+ }
+
+ /*css for the div that holds the form and the text*/
 .formContainer {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    width: 100vw;
-    background-color: bisque;
+    width: 100%;
+    overflow: hidden;
+    font-size: 1.2vw;
+    padding: 10vh 0 10vh 0;
 }
 
+/*css for the form divs*/
 .personalContainer {
-    width: 25vw;
-    font-size: 1.2vw;
-    background-color: aquamarine;
+    width: 35vw;
+    box-shadow: 0px 0px 1vw 5px rgb(0, 0, 0, 0.6);
 }
-.personalContainer input {
+.personalContainer table {
+    height: 100%;
+    width: 100%;
+}
+.personalContainer td {
+    padding: 10px;
+}
+
+.personalContainer input[type=checkbox] {
+
+}
+.personalContainer input[type=text], .personalContainer input[type=email], .personalContainer input[type=number], .personalContainer input[type=date], .personalContainer select {
     margin: 0.5vh 0 0.5vh 0;
+    height: 4vh;
+    width: 100%;
 }
 
 .submit {
-    width: 100%;
+    width: 30%;
+    height: 4vh;
+    font-size: 1vw;
 }
 .reset {
     background-color: transparent;
     border: 0px;
-    margin: auto;
+    margin: 1vh 0 0 0;
 }
 
+/*css for the text divs*/
 .textContainer {
-    width: 50vw;
-    background-color: aqua;
+    width: 40vw;
     height: 50vh;
+    text-align: center;
+    background-color: salmon;
+    margin: 0 0 0 5vw;
 }
