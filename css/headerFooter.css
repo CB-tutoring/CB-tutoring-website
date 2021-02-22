@@ -3,9 +3,9 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   background:#333;
-  font-size: 1vw;
+  font-size: 1.1vw;
 }
 .nav ul {
   *zoom: 1;
@@ -27,7 +27,7 @@
 }
 .nav a {
   display: block;
-  padding: 10px 20px;
+  padding: 2vh 2vw;
   line-height: 5vh;
   color: #fff;
   text-decoration: none;
