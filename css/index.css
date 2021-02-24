@@ -5,7 +5,7 @@ body {
 }
 
 .title {
-  height: 50vh;
+  height: 100vh;
   overflow: visible;
   width: 100%;
   position: relative;
@@ -29,37 +29,136 @@ body {
   text-shadow: 0.2vw 0.2vw beige;
 }
 
-.serviceContainer {
-  width: 40vw;
-  margin: 5vh 0 5vh 5vw;
+/*The student and class selection portion of the webpage*/
+.becomeTutor {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 20vh 0 0 0;
+}
+.becomeTutor img {
+  width: 35%;
+  margin: 0 2vw 0 8vw;
+}
+.becomeTutor div {
+  width: 35%;
+  padding: 1vh 0 0 1vw;
+}
+.becomeTutor div div {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+  padding: 0px;
+}
+.becomeTutor div div div {
+  width: 21%;
+  height: 7vh;
+  margin: 0 1vw 2vh 0;
+  background-color: beige;
+}
+
+
+/*The circle part*/
+.circleContainer {
+  width: 100%;
+  height: 130vh;
+  position: relative;
+  overflow: hidden;
+  margin: 10vh 0 0 0;
+}
+.serviceContainer, .missionContainer {
+  width: 30vw;
+  height: 30vw;
   text-align: center;
+  clip-path: circle(50% at 50% 50%);
+  overflow: hidden;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.serviceContainer {
+  background-color: aqua;
+  top: 30%;
+  left: 70%;
 }
 .missionContainer {
-  width: 40vw;
-  float: right;
-  margin: 5vh 5vw 5vh 0;
+  background-color: magenta;
+  top: 70%;
+  left: 25%;
+}
+.serviceContainer div {
+  width: 20vw;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+}
+.missionContainer div {
+  width: 22vw;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+}
+.circle1, .circle2 {
+  width: 11vw;
+  height: 11vw;
+  clip-path: circle(50% at 50% 50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 10;
+}
+.circle1 div, .circle2 div {
+  width: 10vw;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: absolute;
   text-align: center;
 }
+.circle1 {
+  top: 10%;
+  left: 82%;
+  background-color: lightpink;
+}
+.circle2 {
+  top: 48%;
+  left: 15%;
+  background-color: lightpink;
+}
 
-.bookSession {
+
+/*Teacher part of the webpage*/
+.classContainer {
   width: 100%;
   height: 80vh;
-  background-color: aqua;
-  clear: both;
+  padding: 10vh 0 0 0;
+  position: relative;
+  background-color: #F5F5F5;
 }
-
-.classContainer {
-  display: flex;
-  justify-content: space-around;
-  flex-flow: row wrap;
-  padding: 2vw;
+.classContainer img {
   width: 50%;
-  margin: auto;
+  float: right;
 }
-
-.classContainer div {
-  height: 10vh;
-  width: 22%;
-  background-color: bisque;
-  margin: 5vh 0 0 0;
+.classContainer > div {
+  width: 30%;
+  margin: 0 0 0 5vw;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  text-align: right;
+}
+.classContainer div div {
+  background-color: blue;
+  width: 35%;
+  margin: auto;
+  color: white;
+  text-align: center;
+  padding: 0.7vw;
+  transition: 0.5s;
+}
+.classContainer div div:hover {
+  background-color: lightgreen;
 }
