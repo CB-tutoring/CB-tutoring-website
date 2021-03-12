@@ -2,7 +2,10 @@ body {
     margin: 0px;
     font-family: Helvetica;
 }
-
+h1 {
+  font-size: 2vw;
+  margin: 2vh 0 0 0;
+}
 .titleContainer {
   background-color: rosybrown;
   width: 100%;
@@ -29,7 +32,6 @@ body {
   left: 50%;
 }
 
-
 .overlay {
   height: 8vh;
   background-color: white;
@@ -38,12 +40,17 @@ body {
   margin-top: -8vh;
   transform: translate(0,0);
   z-index: 1;
+  position: relative;
 }
 hr {
   width: 80%;
   height: 0.5vh;
   background-color: black;
   border: none;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .dropdowns {
@@ -51,38 +58,28 @@ hr {
   font-size: 1.5vw;
   position: relative;
   margin: auto;
-  line-height: 10vh;
+  line-height: 4.5vw;
+  display: flex;
+  flex-flow: row wrap;
 }
 .dropdowns div:nth-child(1) {
   background-color: lightgray;
   border-left: 4px solid black;
   padding-left: 1vw;
+  width: 100%;
 }
 .dropdowns div:nth-child(2) {
   margin-bottom: 5vh;
   border-left: 4px solid red;
   padding-left: 1vw;
-}
-.dropdowns button {
-  position: absolute;
-  top: 50%;
-  right: 0%;
-  transform: translate(0%, -50%);
-  width: 6vw;
-  font-size: 1vw;
-  background-color: white;
-}
-
-.hidden {
-  font-size: 1.1vw;
-  margin-top: 2vh; 
-  display: none; 
+  max-width: 85%;
+  height: 4.5vw;
   overflow: hidden;
 }
-.hidden div {
-  opacity: 0; 
-  margin-top: -10.5vh; 
-  transition: 2s; 
+.more { /*will have to add class do dropdown later*/
+  margin: 0 0 0 1vw;
+  color: lightgray;
+  cursor: pointer;
 }
 
 

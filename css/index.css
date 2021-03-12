@@ -3,12 +3,15 @@ body {
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
 }
+h1, h2, h4, p {
+  margin: 0px;
+}
 
 .title {
-  height: 100vh;
-  overflow: visible;
+  height: 65vh;
   width: 100%;
   position: relative;
+  overflow: visible;
 }
 .title img {
   position: absolute;
@@ -20,11 +23,11 @@ body {
 }
 .title div {
   transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  font-size: 5vw;
+  top: 60%;
+  left: 45%;
+  font-size: 3vw;
   position: absolute;
-  text-align: center;
+  text-align: left;
   font-weight: bold;
   text-shadow: 0.2vw 0.2vw beige;
 }
@@ -32,104 +35,57 @@ body {
 /*The student and class selection portion of the webpage*/
 .becomeTutor {
   width: 100%;
-  display: flex;
-  flex-flow: row wrap;
   margin: 20vh 0 0 0;
+  background-color: azure;
+  padding: 10vh 0 10vh 0;
 }
 .becomeTutor img {
   width: 35%;
-  margin: 0 2vw 0 8vw;
+  vertical-align: middle;
+  display: inline-block;
 }
 .becomeTutor div {
   width: 35%;
   padding: 1vh 0 0 1vw;
+  margin: 0 0 0 15vw;
+  font-size: 1.5vw;
+  vertical-align: middle;
+  display: inline-block;
 }
-.becomeTutor div div {
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: left;
-  padding: 0px;
+.becomeTutor h1, .sectionSubjects h1, .sectionTeacher h1  {
+  margin: 0.5vh 0 2vh 0;
+  font-size: 4vw;
 }
-.becomeTutor div div div {
-  width: 21%;
-  height: 7vh;
-  margin: 0 1vw 2vh 0;
-  background-color: beige;
+.becomeTutor p, .sectionSubjects p, .sectionTeacher p {
+  font-size: 1vw;
+  margin: 5vh 0 0 0;
 }
-
+.becomeTutor h4, .sectionSubjects h4, .sectionTeacher h4 {
+  font-weight: normal;
+  font-size: 1.5vw;
+}
 
 /*The circle part*/
-.circleContainer {
+.sectionSubjects {  
   width: 100%;
-  height: 130vh;
   position: relative;
   overflow: hidden;
-  margin: 10vh 0 0 0;
+  padding: 10vh 0 10vh 0;
+  width: 90vw;
 }
-.serviceContainer, .missionContainer {
+.sectionSubjects > div, .sectionTeacher > div {
+  margin: 0 0 0 15vw;
+}
+.sectionSubjects div div {
+  display: inline-block;
   width: 30vw;
-  height: 30vw;
-  text-align: center;
-  clip-path: circle(50% at 50% 50%);
-  overflow: hidden;
-  z-index: 2;
-  transform: translate(-50%, -50%);
-  position: absolute;
-}
-.serviceContainer {
-  background-color: aqua;
-  top: 30%;
-  left: 70%;
-}
-.missionContainer {
-  background-color: magenta;
-  top: 70%;
-  left: 25%;
-}
-.serviceContainer div {
-  width: 20vw;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  position: absolute;
-}
-.missionContainer div {
-  width: 22vw;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  position: absolute;
-}
-.circle1, .circle2 {
-  width: 11vw;
-  height: 11vw;
-  clip-path: circle(50% at 50% 50%);
-  transform: translate(-50%, -50%);
-  position: absolute;
-  z-index: 10;
-}
-.circle1 div, .circle2 div {
-  width: 10vw;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  text-align: center;
-}
-.circle1 {
-  top: 10%;
-  left: 82%;
-  background-color: lightpink;
-}
-.circle2 {
-  top: 48%;
-  left: 15%;
-  background-color: lightpink;
+  background-color: blanchedalmond;
+  margin: 1.8vw 1.8vw 0 0;
+  height: 25vh;
 }
 
 
-/*Teacher part of the webpage*/
+/*Teacher sign up of the webpage*/
 .classContainer {
   width: 100%;
   height: 80vh;
@@ -150,6 +106,14 @@ body {
   transform: translate(-50%, -50%);
   text-align: right;
 }
+.classContainer p {
+  margin: 3vh 0 3vh 0;
+}
+.classContainer h4 {
+  margin: 0vh 0 1vh 0;
+  font-weight: normal;
+  font-size: 1.2vw;
+}
 .classContainer div div {
   background-color: blue;
   width: 35%;
@@ -157,7 +121,7 @@ body {
   color: white;
   text-align: center;
   padding: 0.7vw;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 .classContainer div div:hover {
   background-color: lightgreen;
