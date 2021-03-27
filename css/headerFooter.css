@@ -9,6 +9,8 @@
   position: fixed;
   z-index: 100;
   padding: 1vh 0 0 0;
+  background-color: rgb(243, 237 , 200, 0.5);
+  top: 0;
 }
 .nav img {
   width: 5%;
@@ -57,7 +59,7 @@
 .nav li ul {
   color: white;
   position:absolute;
-  margin: -2vh 0 0 0;
+  margin: -3vh 0 0 0;
   z-index: 1;
   visibility: hidden;
   opacity: 0;
@@ -66,6 +68,8 @@
   -moz-transition: 300ms ease;
   -o-transition: 300ms ease;
   transition: 300ms ease;
+  transform: translate(-50%, 0);
+  left: 50%;
 }
 .nav ul > li:hover ul {
   visibility: visible;
