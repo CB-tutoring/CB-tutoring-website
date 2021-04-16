@@ -1,18 +1,28 @@
 body { 
     margin: 0px;
+    background-color: beige;
 }
 * {
     box-sizing: border-box;
-  }
+}
+.cougar1 {
+    position: absolute;
+    top: 0;
+    width: 60%;
+    z-index: -5;
+    right: 40%;
+    transform: rotateY(180deg);
+    opacity: 0.5;
+}
 
 /*css for the text divs*/
 .textContainer {
     width: 40vw;
-    background-color: salmon;
     padding: 1vh 2vw;
     display: inline-block;
     vertical-align: middle;
     margin: 0 10vw 0 3vw;
+    z-index: 1;
 }
 .textContainer img {
     width: 4vw;
@@ -30,6 +40,8 @@ body {
     vertical-align: middle;
     width: 35vw;
     box-shadow: -0.7vw 0.7vw 1vw 5px rgb(0, 0, 0, 0.4);
+    z-index: 1;
+    background-color: white;
 }
 .personalContainer table {
     height: 100%;

@@ -1,0 +1,76 @@
+body { 
+    margin: 0px;
+    background-color: beige;
+}
+* {
+    box-sizing: border-box;
+}
+.cougar {
+    position: absolute;
+    top: 10%;
+    width: 60%;
+    z-index: -5;
+    right: 40%;
+    transform: rotateY(180deg);
+    opacity: 0.5;
+}
+
+/*css for the form divs*/
+.personalContainer {
+    display: inline-block;
+    vertical-align: middle;
+    width: 35vw;
+    box-shadow: -0.7vw 0.7vw 1vw 5px rgb(0, 0, 0, 0.4);
+    z-index: 1;
+    background-color: white;
+    padding: 3vh 5vh;
+}
+.personalContainer table {
+    height: 100%;
+    width: 100%;
+    column-width: 50%;
+}
+.personalContainer td {
+    padding: 10px;
+    width: 50%;
+}
+
+.personalContainer input[type=checkbox] {
+
+}
+.personalContainer input[type=text], .personalContainer input[type=email], .personalContainer input[type=number], .personalContainer input[type=date], .personalContainer select {
+    margin: 0.5vh 0 0.5vh 0;
+    height: 4vh;
+    width: 100%;
+}
+
+.submit {
+    width: 30%;
+    height: 4vh;
+    font-size: 1vw;
+}
+.reset {
+    background-color: transparent;
+    border: 0px;
+    margin: 1vh 0 0 0;
+}
+
+
+/*css for the text divs*/
+.textContainer {
+    width: 30vw;
+    padding: 1vh 2vw;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0vw 0 15vw;
+    z-index: 1;
+    background-color: blanchedalmond;
+}
+.textContainer img {
+    width: 4vw;
+    display: inline-block;
+    margin: 0 2vw 0 0;
+}
+.textContainer div {
+    display: inline-block;
+}

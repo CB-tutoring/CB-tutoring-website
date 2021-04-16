@@ -2,15 +2,17 @@
 body { 
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
+  position: relative;
 }
 h1, h2, h4, p {
   margin: 0px;
 }
 
+
 .title {
   height: 65vh;
   width: 100%;
-  position: fixed;
+  position: relative;
   overflow: visible;
   z-index: -1;
   top: 0;
@@ -40,7 +42,6 @@ h1, h2, h4, p {
   background: rgb(0,0,0);
   background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,212,255,0) 87%);
   height: 10vh;
-  margin: 70vh 0 0 0;
   opacity: 0.2;
 }
 .becomeTutor {
@@ -61,15 +62,15 @@ h1, h2, h4, p {
   vertical-align: middle;
   display: inline-block;
 }
-.becomeTutor h1, .sectionSubjects h1, .sectionTeacher h1  {
+.becomeTutor h1, .sectionSubjects h1, .sectionTeacher h1, .howTo h1  {
   margin: 0.8vh 0 1vh 0;
   font-size: 4.5vw;
 }
-.becomeTutor p, .sectionSubjects p, .sectionTeacher p {
+.becomeTutor p, .sectionSubjects p, .sectionTeacher p, .howTo p {
   font-size: 1vw;
   margin: 5vh 0 0 0;
 }
-.becomeTutor h4, .sectionSubjects h4, .sectionTeacher h4 {
+.becomeTutor h4, .sectionSubjects h4, .sectionTeacher h4, .howTo h4 {
   font-weight: normal;
   font-size: 1.5vw;
 }
@@ -82,7 +83,7 @@ h1, h2, h4, p {
   padding: 11vh 0 11vh 0;
   background-color: #E5EEDA;
 }
-.sectionSubjects > div, .sectionTeacher > div {
+.sectionSubjects > div {
   margin: 0 0 0 15vw;
 }
 .sectionSubjects div div {
@@ -91,6 +92,10 @@ h1, h2, h4, p {
   background-color: floralwhite;
   margin: 2vw 2vw 0 0;
   height: 23vh;
+  transition: 0.2s;
+}
+.sectionSubjects div div:hover {
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.2);
 }
 .sectionSubjects img {
   height: 23vh;
@@ -100,10 +105,11 @@ h1, h2, h4, p {
 /*Teacher sign up of the webpage*/
 .classContainer {
   width: 100%;
-  height: 80vh;
-  padding: 10vh 0 0 0;
+  height: 95vh;
+  padding: 25vh 0 0 0;
   position: relative;
   background-color: azure;
+  font-size: 1.2vw;
 }
 .classContainer img {
   width: 50%;
@@ -137,4 +143,43 @@ h1, h2, h4, p {
 }
 .classContainer div div:hover {
   background-color: lightgreen;
+}
+
+.howTo {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+.howTo > div {
+  width: 50%;
+}
+.howTo > div:nth-child(1) {
+  background-color: white;
+}
+.howTo > div:nth-child(2) {
+  background-color: black;
+  color: white;
+}
+.howTo > div > div {
+  margin: 15vh 0 10vh 15%;
+  width: 70%;
+  display: flex;
+  justify-content: left;
+  flex-flow: column wrap;
+}
+.skill {
+  width: 80%;
+  margin: 5vh 0 0 0;
+}
+.skill img {
+  width: 15%;
+}
+.learnMore {
+  margin: 5vh 0 0 0;
+  font-size: 1.25vw;
+  color: black;
+  background-color: white;
+  line-height: 5vh;
+  text-align: center;
+  width: 25%;
 }

@@ -3,77 +3,123 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="css/bookSession.css">
+    <link rel="stylesheet" href="css/tutorSignup.css">
     <link rel="stylesheet" href="css/headerFooter.css">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div><h1>Book a session</h1></div>
 
-        <div class="formContainer">
-          <!--Form containing all of their personal information-->
-          <div class="personalContainer">
-              <form action="" id="personalForm">
-                <table>
-                  <tr>
-                    <td>
-                      <label for="fnameS">First name:</label><br>
-                      <input type="text" id="fnameS" name="fnameS">
-                    </td>
-                    <td>
-                      <label for="lnameS">Last name:</label><br>
-                      <input type="text" id="lnameS" name="lnameS">
-                    </td>
-                  </tr>
-                  <tr colspan="2">
-                    <td>
-                      <label for="grade">Grade:</label><br>
-                      <input type="checkbox" id="9" name="9" value="9">
-                      <label for="9">9</label> 
-                      <input type="checkbox" id="10" name="10" value="10">
-                      <label for="10">10</label>
-                      <input type="checkbox" id="11" name="11" value="11">
-                      <label for="11">11</label>   
-                      <input type="checkbox" id="12" name="12" value="12">
-                      <label for="12">12</label>
-                    </td>
-                  </tr>
-                  <tr colspan="2">
-                    <td>
-                      <label for="Email">Email:</label> <br>
-                      <input type="email" id="email" name="email">
-                    </td>
-                  </tr>
-                  <tr colspan="2">
-                    <td>
-                      <label for="nameT">Tutor's Name:</label> <br>
-                      <input type="text" id="nameT" name="nameT">
-                    </td>
-                  </tr>
-                  <tr colspan="2">
-                    <td>
-                      <label for="date">Date:</label><br>
-                      <input type="date" id="date" name="date"> 
-                    </td>
-                    <td>
-                      <label for="time">Timeslot:</label> <br>
-                      <select id="time" name="timeList" form="sessionForm">
-                          <option value="24">2pm - 4pm</option>
-                          <option value="46">4pm - 6pm</option>
-                      </select> 
-                    </td>
-                  </tr>
-                  <tr colspan="2">
-                    <td>
-                      <input type="submit" class="submit">  <br>
-                      <input type="reset" class="reset"> 
-                    </td>
-                  </tr>
-                </table> 
-            </form>  
-          </div>
-          <div class="textContainer">
-            text here for container the information necessary for the fill up of the form
-          </div>
+    <img src="image/cougar2.png" alt="" class="cougar">
+    <nav class="nav">
+      <img src="image/colonel.png" alt="" class="imageHeader">
+      <img src="image/logo.png" alt="" class="logoHeader">      
+      <ul>
+        <li>
+          <a href="">Course</a>
+        </li>
+        <li>
+          <a href="">Booking</a>
+        </li>
+        <li>
+          <a href="">Tutor</a>
+        </li>
+        <li>
+          <a href="">Contact</a>
+        </li>
+        <li>
+          <a href="">FAQ</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div style="margin: 25vh 0vh 25vh 8vw;">
+      <div class="formContainer">
+        <!--Form containing all of their personal information-->
+        <div class="personalContainer">
+          <center><h1>Become a tutor</h1></center>
+            <form action="" id="personalForm">
+              <table>
+                <tr>
+                  <td>
+                    <label for="fnameS">First name:</label><br>
+                    <input type="text" id="fnameS" name="fnameS">
+                  </td>
+                  <td>
+                    <label for="lnameS">Last name:</label><br>
+                    <input type="text" id="lnameS" name="lnameS">
+                  </td>
+                </tr>
+                <tr colspan="2">
+                  <td>
+                    <label for="grade">Grade:</label><br>
+                    <input type="checkbox" id="9" name="9" value="9">
+                    <label for="9">9</label> 
+                    <input type="checkbox" id="10" name="10" value="10">
+                    <label for="10">10</label>
+                    <input type="checkbox" id="11" name="11" value="11">
+                    <label for="11">11</label>   
+                    <input type="checkbox" id="12" name="12" value="12">
+                    <label for="12">12</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label for="Email">Email:</label> <br>
+                    <input type="email" id="email" name="email">
+                  </td>
+                  <td>
+                    <label for="nameT">Desired Subject:</label> <br>
+                    <input type="text" id="nameT" name="nameT">
+                  </td>
+                </tr>
+                <tr colspan="2">
+                  <td>
+                    <label for="grade">Grade:</label><br>
+                    <input type="checkbox" id="monday" name="monday" value="monday">
+                    <label for="monday">Monday</label> 
+                    <input type="checkbox" id="tuesday" name="tuesday" value="tuesday">
+                    <label for="tuesday">Tuesday</label> <br>
+                    <input type="checkbox" id="wednesday" name="wednesday" value="wednesday">
+                    <label for="wednesday">Wednesday</label>   
+                    <input type="checkbox" id="thursday" name="thursday" value="thursday">
+                    <label for="thursday">Thursday</label> <br>
+                    <input type="checkbox" id="friday" name="friday" value="friday">
+                    <label for="friday">Friday</label>
+                    <input type="checkbox" id="saturday" name="saturday" value="saturday">
+                    <label for="saturday">Saturday</label>
+                    <input type="checkbox" id="sunday" name="sunday" value="sunday">
+                    <label for="sunday">Sunday</label>
+                  </td>
+                  <td>
+                    <label for="time">Timeslot:</label> <br>
+                    <select id="time" name="timeList" form="sessionForm">
+                      <option value="24">2pm - 3pm</option>
+                      <option value="24">3pm - 4pm</option>
+                      <option value="24">4pm - 5pm</option>
+                      <option value="24">5pm - 6pm</option>
+                      <option value="24">6pm - 7pm</option>
+                      <option value="24">7pm - 8pm</option>
+                      <option value="24">8pm - 9pm</option>
+                    </select> 
+                  </td>
+                </tr>
+                <tr colspan="2">
+                  <td>
+                    <input type="submit" class="submit">  <br>
+                    <input type="reset" class="reset"> 
+                  </td>
+                </tr>
+              </table> 
+          </form>  
         </div>
+        <div class="textContainer">
+          text here for container the information necessary for the fill up of the form for people trying to become a tutor. 
+        </div>
+      </div>
+    </div>
+
+    <footer></footer>
+        
   </body>
 </html>
